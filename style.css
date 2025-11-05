@@ -1,59 +1,73 @@
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #f7f7f7;
-    font-family: Arial, sans-serif;
-  }
-  .calculator {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    width: 280px;
-  }
-  .display {
-    background-color: #222;
-    color: #fff;
-    font-size: 2em;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: right;
-    margin-bottom: 15px;
-    min-height: 40px;
-    overflow-x: auto;
-    word-wrap: break-word;
-  }
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-  }
-  button {
-    padding: 15px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background: #e0e0e0;
-    transition: background-color 0.3s;
-  }
-  button.operator {
-    background: #fe9241;
-    color: white;
-  }
-  button:hover {
-    background-color: #d0d0d0;
-  }
-  button.operator:hover {
-    background-color: #e07b22;
-  }
-  button.equal {
-    background-color: #41b6e6;
-    color: white;
-    grid-column: span 2;
-  }
-  button.equal:hover {
-    background-color: #2b91bf;
-  }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  width: 300px;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.display {
+  background: #000;
+  color: #0f0;
+  padding: 20px;
+  font-size: 28px;
+  text-align: right;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  height: 40px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  background: #444;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #555;
+}
+
+.operator {
+  background: #ff9500;
+}
+
+.operator:hover {
+  background: #e08900;
+}
+
+.equal {
+  background: #28a745;
+  grid-column: span 2;
+}
+
+.equal:hover {
+  background: #218838;
+}
+
+button:nth-last-child(1) {
+  background: #dc3545;
+}
+
+button:nth-last-child(1):hover {
+  background: #c82333;
+}
+
